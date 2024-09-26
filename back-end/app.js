@@ -78,5 +78,13 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+app.get('/AboutUs', (req, res) => {
+  res.json({
+    name: "Tony Liu",
+    bio: "Hello! My name is Tony Liu, and I am a junior at NYU currently pursuing a Bachelor of Arts degree in computer science  with a minor in mathematics. I have always been fascinated  by the boundless possibilities that computer science offers, and I am specifically interested in full stack development, artificial intelligence, natural langauge processing, and computer vision. In my free time, I enjoy running in Central Park, exploring new restaurants, and spending time with friends",
+    imageUrl: "/personal_pic.JPG"
+  });
+});
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
